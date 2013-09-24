@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?>
+
+<cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="cdt.managedbuild.config.gnu.cross.exe.debug.389430423">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.config.gnu.cross.exe.debug.389430423" moduleId="org.eclipse.cdt.core.settings" name="Default">
+				<macros>
+					<stringMacro name="OUT" type="VALUE_TEXT" value="/home/engle/android/ME722-JB/out/target/product/milestone2/obj/KERNEL_OBJ"/>
+				</macros>
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe" cleanCommand="rm -rf" description="" id="cdt.managedbuild.config.gnu.cross.exe.debug.389430423" name="Default" parent="cdt.managedbuild.config.gnu.cross.exe.debug.389430423">
+					<folderInfo id="cdt.managedbuild.config.gnu.cross.exe.debug.389430423." name="/" resourcePath="">
+						<toolChain id="cdt.managedbuild.toolchain.gnu.base.1335855460" name="Linux GCC" superClass="cdt.managedbuild.toolchain.gnu.base">
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="cdt.managedbuild.target.gnu.platform.base.332111303" name="Debug Platform" osList="linux,hpux,aix,qnx" superClass="cdt.managedbuild.target.gnu.platform.base"/>
+							<builder buildPath="${OUT}" id="cdt.managedbuild.target.gnu.builder.base.830309924" incrementalBuildTarget="zImage" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="Gnu Make Builder" parallelBuildOn="true" parallelizationNumber="optimal" superClass="cdt.managedbuild.target.gnu.builder.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.archiver.base.476506923" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.base.2012292258" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.base">
+								<option id="gnu.cpp.compiler.option.optimization.level.1860731131" name="Optimization Level" superClass="gnu.cpp.compiler.option.optimization.level" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.debugging.level.1135083564" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.c.compiler.base.272723287" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.base">
+								<option id="gnu.c.compiler.option.include.paths.316587912" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/2.6.32-9/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/2.6.32-9/arch/arm/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/2.6.32-9/arch/arm/plat-omap/include/dspbridge}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/2.6.32-9/arch/arm/plat-omap/include/mach}&quot;"/>
+									<listOptionValue builtIn="false" value="/2.6.32-9/arch/arm/plat-omap/include/plat"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/2.6.32-9/arch/arm/include/asm/hardware}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/2.6.32-9/arch/arm/include/asm/mach}&quot;"/>
+								</option>
+								<option id="gnu.c.compiler.option.preprocessor.def.symbols.1886602749" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="__KERNEL__=1"/>
+								</option>
+								<option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.option.optimization.level.84599535" name="Optimization Level" superClass="gnu.c.compiler.option.optimization.level" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.debugging.level.1889201757" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" value="gnu.c.debugging.level.max" valueType="enumerated"/>
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1032302868" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.c.linker.base.503089243" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.base">
+								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.248859716" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.base.1217164905" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.assembler.base.1889517287" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.base">
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.3510902" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry excluding="arch/arm/mach-aaec2000/|arch/arm/mach-at91/|arch/arm/mach-bcmring/|arch/arm/mach-clps711x/|arch/arm/mach-davinci/|arch/arm/mach-ebsa110/|arch/arm/mach-ep93xx/|arch/arm/mach-footbridge/|arch/arm/mach-gemini/|arch/arm/mach-h720x/|arch/arm/mach-integrator/|arch/arm/mach-iop13xx/|arch/arm/mach-iop32x/|arch/arm/mach-iop33x/|arch/arm/mach-ixp2000/|arch/arm/mach-ixp23xx/|arch/arm/mach-ixp4xx/|arch/arm/mach-kirkwood/|arch/arm/mach-ks8695/|arch/arm/mach-l7200/|arch/arm/mach-lh7a40x/|arch/arm/mach-loki/|arch/arm/mach-mmp/|arch/arm/mach-msm/|arch/arm/mach-mv78xx0/|arch/arm/mach-mx1/|arch/arm/mach-mx2/|arch/arm/mach-mx25/|arch/arm/mach-mx3/|arch/arm/mach-mxc91231/|arch/arm/mach-netx/|arch/arm/mach-nomadik/|arch/arm/mach-ns9xxx/|arch/arm/mach-omap1/|arch/arm/mach-orion5x/|arch/arm/mach-pnx4008/|arch/arm/mach-pxa/|arch/arm/mach-realview/|arch/arm/mach-rpc/|arch/arm/mach-s3c2400/|arch/arm/mach-s3c2410/|arch/arm/mach-s3c2412/|arch/arm/mach-s3c2440/|arch/arm/mach-s3c2442/|arch/arm/mach-s3c2443/|arch/arm/mach-s3c24a0/|arch/arm/mach-s3c6400/|arch/arm/mach-s3c6410/|arch/arm/mach-s5pc100/|arch/arm/mach-sa1100/|arch/arm/mach-shark/|arch/arm/mach-stmp378x/|arch/arm/mach-stmp37xx/|arch/arm/mach-u300/|arch/arm/mach-versatile/|arch/arm/mach-w90x900/|arch/arm/plat-iop/|arch/arm/plat-mxc/|arch/arm/plat-orion/|arch/arm/plat-pxa/|arch/arm/plat-s3c/|arch/arm/plat-s3c24xx/|arch/arm/plat-s3c64xx/|arch/arm/plat-s5pc1xx/|arch/arm/plat-stmp3xxx/|arch/alpha/|arch/avr32/|arch/blackfin/|arch/cris/|arch/frv/|arch/h8300/|arch/ia64/|arch/m32r/|arch/m68k/|arch/m68knommu/|arch/microblaze/|arch/mips/|arch/mn10300/|arch/parisc/|arch/powerpc/|arch/s390/|arch/score/|arch/sh/|arch/sparc/|arch/um/|arch/x86/|arch/xtensa/" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="2.6.32-9.cdt.managedbuild.target.gnu.cross.exe.1045115805" name="Executable"/>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="Release">
+			<resource resourceType="PROJECT" workspacePath="/2.6.32-9"/>
+		</configuration>
+		<configuration configurationName="Default">
+			<resource resourceType="PROJECT" workspacePath="/2.6.32-9"/>
+		</configuration>
+		<configuration configurationName="Debug">
+			<resource resourceType="PROJECT" workspacePath="/2.6.32-9"/>
+		</configuration>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.cross.exe.release.904943638;cdt.managedbuild.config.gnu.cross.exe.release.904943638.;cdt.managedbuild.tool.gnu.cross.c.compiler.936987942;cdt.managedbuild.tool.gnu.c.compiler.input.873906245">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileC"/>
+			<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileC">
+				<buildOutputProvider>
+					<openAction enabled="true" filePath=""/>
+					<parser enabled="true"/>
+				</buildOutputProvider>
+				<scannerInfoProvider id="specsFile">
+					<runAction arguments="-E -P -v -dD &quot;${plugin_state_location}/specs.c&quot;" command="arm-eabi-gcc" useDefault="true"/>
+					<parser enabled="true"/>
+				</scannerInfoProvider>
+			</profile>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.cross.exe.debug.389430423;cdt.managedbuild.config.gnu.cross.exe.debug.389430423.;cdt.managedbuild.tool.gnu.c.compiler.base.272723287;cdt.managedbuild.tool.gnu.c.compiler.input.1032302868">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.cross.exe.debug.389430423;cdt.managedbuild.config.gnu.cross.exe.debug.389430423.;cdt.managedbuild.tool.gnu.cross.c.compiler.522267638;cdt.managedbuild.tool.gnu.c.compiler.input.1218644624">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileC"/>
+			<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileC">
+				<buildOutputProvider>
+					<openAction enabled="true" filePath=""/>
+					<parser enabled="true"/>
+				</buildOutputProvider>
+				<scannerInfoProvider id="specsFile">
+					<runAction arguments="-E -P -v -dD &quot;${plugin_state_location}/specs.c&quot;" command="arm-eabi-gcc" useDefault="true"/>
+					<parser enabled="true"/>
+				</scannerInfoProvider>
+			</profile>
+		</scannerConfigBuildInfo>
+	</storageModule>
+</cproject>
