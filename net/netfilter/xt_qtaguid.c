@@ -886,7 +886,7 @@ static int iface_stat_fmt_proc_read(char *page, char **num_items_returned,
 				outp, char_count,
 				"%s %d "
 				"%llu %llu %llu %llu "
-				"%llu %llu %llu %llu\n",
+				"%lu %lu %lu %lu\n",
 				iface_entry->ifname,
 				iface_entry->active,
 				iface_entry->totals_via_dev[IFS_RX].bytes,
@@ -1003,7 +1003,7 @@ static struct iface_stat *iface_alloc(struct net_device *net_dev)
 	 * ipv6 notifier chains are atomic :(
 	 * No create_proc_read_entry() for you!
 	 */
-	isw = kmalloc(sizeof(*isw), GFP_ATOMIC);
+	isw = kzalloc(sizeof(*isw), GFP_ATOMIC);
 	if (!isw) {
 		pr_err(TAG": iface_stat: create(%s): "
 		       "work alloc failed\n", new_iface->ifname);
